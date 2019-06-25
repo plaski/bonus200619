@@ -38,11 +38,15 @@ header {
     left: 0;
     width: 100%;
     z-index: 1;
+    text-align: center;
+}
+
+.link-logo {
+    display: inline-block;
 }
 
 .logo {
-    margin: 0 auto;
-    display: inline-block;
+    display: block;
     width: 50px;
     height: 50px;
     background-color: #ffdb00;
@@ -245,6 +249,15 @@ header {
 }
 
 @media screen and (min-width: 640px) {
+    header {
+        text-align: left;
+    }
+
+    .link-logo {
+        display: inline-block;
+        margin-left: 65px;
+    }
+
     .container {
         background-position: 30% 0;
         background-size: cover;
@@ -255,10 +268,6 @@ header {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-    }
-
-    .logo {
-        margin-left: 65px;
     }
 
     .hero {
@@ -356,8 +365,11 @@ header {
         background-position: 40% 0%;
     }
 
-    .logo {
+    .link-logo {
         margin-left: 5%;
+    }
+
+    .logo {
         width: 95px;
         height: 95px;
         background-size: 78px 78px;
